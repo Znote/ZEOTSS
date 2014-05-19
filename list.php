@@ -13,8 +13,11 @@ foreach($iterator as $entity) {
 			$file_extension = pathinfo($entity->getFilename(), PATHINFO_EXTENSION);
 			if ($file_extension == 'php') {
 				$path = explode('/', $entity->getPathname());
+				//$path = $entity->getPathname();
+
 				if (count($path) === 1) $path = explode('\\', $entity->getPathname());
-				$plugins[$path[1]] = $path[2];
+				$plugins[$path[1]][] = $path[2];
+				//$plugins[$path[1]] = $path[2];
 			}
 		}
 	}

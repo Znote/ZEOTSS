@@ -2,7 +2,7 @@
 
 $config['mysql'] = array(
 	'username' => 'zeotss',
-	'password' => 'aDVAVb75bUjvfFCx',
+	'password' => 'zeotss',
 	'database' => 'zeotss',
 	'hostname' => '127.0.0.1'
 );

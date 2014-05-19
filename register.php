@@ -17,18 +17,18 @@ if (isset($_POST['website'])) {
 	if ($status) {
 		$password = rand(10000000, 99999999);
 		$encp = sha1($password);
-		$ip = ip2long(gethostbyname($website));
+		// Will feth the IP of the host even if the host is not running on port 80.
+		$ip = (count(explode(':', $website)) < 2) ? ip2long(gethostbyname($website)) : ip2long(gethostbyname(explode(':', $website)[0]));
 		$time = time();
 
 		// Check if site already exist
 		$exist = $mysql->select_single("SELECT `id` FROM `sites` WHERE `name` = '{$website}' LIMIT 1;");
 		if (!$exist) {
 			$mysql->insert("INSERT INTO `sites` (`name`, `ip`, `password`, `created`, `email`) VALUES ('{$website}', '{$ip}', '{$encp}', '{$time}', '{$email}');");
-			echo "REGISTER COMPLETE: Your password is: $encp <br>Don't forget it!";
+			echo "REGISTER COMPLETE.";
 		} else {
 			echo "Site already registered.";
 		}
-		
 	} else {
 		echo "Registration failed, invalid data?";
 	}

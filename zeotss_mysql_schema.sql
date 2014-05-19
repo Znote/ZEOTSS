@@ -34,7 +34,7 @@ CREATE TABLE `sites` (
   `created` int(11) NOT NULL,
   `email` varchar(128) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -47,6 +47,8 @@ CREATE TABLE `visitors` (
   `site_id` int(11) NOT NULL,
   `longip` int(11) NOT NULL,
   `registered` tinyint(4) NOT NULL,
+  `added` int(11) unsigned NOT NULL,
+  `lastseen` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
