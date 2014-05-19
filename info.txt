@@ -1,0 +1,2 @@
+ZEOTSS
+Znote External Open Tibia Services Server
