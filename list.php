@@ -1,4 +1,4 @@
-<?php $filepath = '/'; require_once 'engine/init.php'; require_once 'module.php';
+<?php $filepath = './'; require_once 'engine/init.php'; require_once 'module.php';
 
 // Autofetch API modules
 $directory = 'modules';

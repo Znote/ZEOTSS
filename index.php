@@ -10,10 +10,10 @@ If you wish to use ZEOTSS services, feel free to <a href="register.php">register
 	<tr>
 		<td width="200" valign="top">
 			<h2>Installed Modules</h2>
-			<p>http://<?php echo $_SERVER['HTTP_HOST'] ?>/zeotss/list.php</p>
+			<p>http://<?php echo $_SERVER['HTTP_HOST'] ?>/list.php</p>
 			<iframe src="list.php?debug=1" width="400" height="330"></iframe>
 			<h2>Sample Module</h2>
-			<p>http://<?php echo $_SERVER['HTTP_HOST'] ?>/zeotss/modules/samples/blank.php</p>
+			<p>http://<?php echo $_SERVER['HTTP_HOST'] ?>/modules/samples/blank.php</p>
 			<iframe src="modules/samples/blank.php?debug=1" width="400" height="300"></iframe>
 		</td>
 		<td valign="top">
