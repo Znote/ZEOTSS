@@ -4,7 +4,7 @@ ZEOTSS
 Znote's External Open Tibia Services Server (ZEOTSS)
 Official server: [http://zeotss.znote.eu/] (http://zeotss.znote.eu/)
 
-After you register your server at [http://zeotss.znote.eu/register.php](ZEOTSS Web register page) you can start using it.
+After you register your server at [ZEOTSS Web register page](http://zeotss.znote.eu/register.php) you can start using it.
 
 Sample code of registeringing visitors who have registered to your site on ZEOTSS:
 ```php
