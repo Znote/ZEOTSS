@@ -2,7 +2,7 @@
 $filepath = "/";
 require_once 'engine/init.php';
 ?>
-<h1>Znote External Open Tibia Services Server (ZEOTSS)</h1>
+<h1>Znote's External Open Tibia Services Server (ZEOTSS)</h1>
 <p>ZEOTSS is a php json API service. It is meant to be used as a common portal for Znote AAC users.<br>
 Two services I intend to create is an IP validation for paypal scammers, and other OT resources that can be sentralised.<br>
 If you wish to use ZEOTSS services, feel free to <a href="register.php">register your website</a> to gain access to its services.</p>

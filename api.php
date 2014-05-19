@@ -11,6 +11,9 @@ if (isset($moduleVersion)) $response['version']['module'] = $moduleVersion;
 function SendResponse($response) {
 	global $config;
 	if ($config['api']['debug']) data_dump($response, false, "Response (debug mode)");
-	else echo json_encode($response);
+	else {
+		header('Content-Type: application/json');
+		echo json_encode($response);
+	}
 }
 ?>
