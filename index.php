@@ -1,5 +1,5 @@
 <?php
-$filepath = "/";
+$filepath = "./";
 require_once 'engine/init.php';
 ?>
 <h1>Znote's External Open Tibia Services Server (ZEOTSS)</h1>

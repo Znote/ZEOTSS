@@ -1,5 +1,5 @@
 <?php
-$filepath = "/";
+$filepath = "./";
 require_once 'engine/init.php';
 if (isset($_POST['website'])) {
 	$website = $_POST['website'];
