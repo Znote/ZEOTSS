@@ -9,6 +9,7 @@ $ip = ip2long($_SERVER['REMOTE_ADDR']);
 
 // Check if IP exist
 $site = $mysql->select_single("SELECT * FROM `sites` WHERE `ip`='$ip' LIMIT 1;");
+
 if ($site !== false) {
 	$response['data']['exist'] = true;
 
@@ -36,6 +37,7 @@ if ($site !== false) {
 	}
 	// visitor (id, siteid, longip, registered)
 } else $response['data']['exist'] = false;
+
 
 // Send the response through JSON API
 SendResponse($response);
